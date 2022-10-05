@@ -1,5 +1,6 @@
 /* ==== "Inter" FONT-FAMILY FROM FONTS.GOOGLE.COM  ==== */
 @import url("https://fonts.googleapis.com/css2?family=Inter:wght@400;500&display=swap");
+
 /* ==== ROOT RESET ==== */
 * {
   margin: 0;
@@ -109,6 +110,11 @@ button {
   padding-right: 1.7rem;
   padding-top: 5rem;
   margin-bottom: 5rem;
+}
+
+.landing {
+  background: antiquewhite;
+  border-radius: 28px;
 }
 .grid-cols-2 {
   width: 100%;
@@ -247,7 +253,6 @@ button {
 footer {
   width: 100%;
   background-color: var(--primary-color);
-  height: 12px;
   margin-top: 8rem;
 }
 
@@ -370,3 +375,183 @@ footer {
     font-size: 19px;
   }
 }
+
+/* ------------------------ footer ----------------------*/
+
+*,
+*:before,
+*:after {
+  box-sizing: border-box;
+}
+
+footer {
+  display: -webkit-flex;
+  display: -moz-flex;
+  display: -ms-flex;
+  display: -o-flex;
+  display: flex;
+  flex-flow: row wrap;
+  padding: 50px;
+  color: #fff;
+  background-color: #011c39;
+}
+
+.footer > * {
+  flex: 1 100%;
+}
+
+.footer-left {
+  margin-right: 1.25rem;
+  margin-bottom: 2em;
+}
+
+.footer-left img {
+  border-radius: 50%;
+  height: 160px;
+  width: 150px;
+}
+
+.footer-right h2 {
+  font-weight: 600;
+  font-size: 19px;
+  font-family: "Times New Roman", Times, serif;
+  color: #f37126;
+}
+
+.footer ul {
+  list-style: none;
+  padding-left: 0;
+}
+
+.footer li {
+  line-height: 2em;
+}
+
+.footer a {
+  text-decoration: none;
+  transition: 0.2s;
+}
+
+.footer a:hover {
+  text-decoration: none;
+  color: #fffb00;
+}
+
+.footer-right {
+  display: -webkit-flex;
+  display: -moz-flex;
+  display: -ms-flex;
+  display: -o-flex;
+  display: flex;
+  flex-flow: row wrap;
+}
+
+.footer-right > * {
+  flex: 1 50%;
+  margin-right: 1.25em;
+}
+
+.box-8 p {
+  color: #ffffff;
+  font-family: "Times New Roman", Times, serif;
+}
+
+.box-8 a {
+  color: #ffffff;
+  font-family: "Times New Roman", Times, serif;
+}
+
+.box-8 #footer-contact {
+  color: #00ffea;
+  transition: 0.3s ease;
+}
+
+.box-8 #footer-contact:hover {
+  color: rgb(255, 0, 0);
+}
+
+.footer-bottom {
+  text-align: center;
+  color: rgb(155, 151, 151);
+  padding-top: 15px;
+  font-size: 20px;
+  font-family: "Times New Roman", Times, serif;
+}
+
+.footer-bottom a {
+  color: #00ffea;
+  font-family: "Times New Roman", Times, serif;
+  font-size: 20px;
+  transition: 0.5s;
+}
+
+.footer-left p {
+  padding-right: 20%;
+  color: #ffffff;
+  font-family: "Times New Roman", Times, serif;
+}
+
+.socials a {
+  background: #364a62;
+  width: 40px;
+  height: 40px;
+  display: inline-block;
+  margin-right: 10px;
+  transition: 0.5s ease;
+}
+
+.socials a:hover {
+  background: #f37126;
+}
+
+.socials-mail a {
+  background: none;
+  display: inline-block;
+}
+
+.socials a i {
+  color: #e7f2f4;
+  padding: 11px 10px;
+  font-size: 20px;
+  transition: 0.3s ease;
+}
+
+/* media queries for only footer */
+
+@media screen and (min-width: 600px) {
+  .footer-right > * {
+    flex: 1;
+  }
+  .footer-left {
+    flex: 1 0px;
+  }
+  .footer-right {
+    flex: 2 0px;
+  }
+}
+
+@media (max-width: 600px) {
+  .footer {
+    padding: 15px;
+  }
+}
+
+@media (max-width: 280px) {
+  .socials a {
+    margin-right: 2px;
+  }
+  .footer-bottom {
+    padding-bottom: 50px;
+  }
+}
+
+@media (max-width: 750px) {
+  .footer ul {
+    padding-bottom: 48px;
+  }
+  .footer-bottom {
+    padding-bottom: 50px;
+  }
+}
+
+/* -------x------------- footer ------------------x-------*/

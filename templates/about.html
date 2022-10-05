@@ -1,0 +1,100 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>SmartMark</title>
+
+    <!-- ==== STYLE.CSS ==== -->
+    <link rel="stylesheet" href="./css/style.css" />
+    <link rel="stylesheet" media="all" href="{{ url_for('static', filename='css/style.css')}}">
+
+
+    <!-- ====  REMIXICON CDN ==== -->
+    <link
+      href="https://cdn.jsdelivr.net/npm/remixicon@2.5.0/fonts/remixicon.css"
+      rel="stylesheet"
+    />
+
+    <!-- ==== ANIMATE ON SCROLL CSS CDN  ==== -->
+    <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet" />
+  </head>
+  <body>
+    <!-- ==== HEADER ==== -->
+    <header class="container header">
+      <!-- ==== NAVBAR ==== -->
+      <nav class="nav">
+        <div class="logo">
+          <h2>SmartMark</h2>
+        </div>
+
+        <div class="nav_menu" id="nav_menu">
+          <button class="close_btn" id="close_btn">
+            <i class="ri-close-fill"></i>
+          </button>
+
+          <ul class="nav_menu_list">
+            <li class="nav_menu_item">
+              <a href="{{ url_for('index') }}" class="nav_menu_link">Face Model</a>
+            </li>
+            <li class="nav_menu_item">
+              <a href="{{ url_for('about') }}" class="nav_menu_link">About</a>
+            </li>
+            <li class="nav_menu_item">
+              <a href="{{ url_for('service') }}" class="nav_menu_link">Service</a>
+            </li>
+            <li class="nav_menu_item">
+              <a href="{{ url_for('contact') }}" class="nav_menu_link">Contact</a>
+            </li>
+          </ul>
+        </div>
+        <button class="toggle_btn" id="toggle_btn">
+          <i class="ri-menu-line"></i>
+        </button>
+      </nav>
+    </header>
+    <section class="wrapper">
+        <div class="container landing">
+          <div class="grid-cols-2">
+            <div class="grid-item-2">
+                <div class="team_img_wrapper">
+                  <img
+                    src="{{ url_for('static', filename='img/team.svg')}}"
+                    alt="team-img"
+                  />
+                </div>
+              </div>
+            <div class="grid-item-1">
+              <h1 class="main-heading">
+                <span>About US</span>
+                <br />
+                <!-- Infinite Enhance. -->
+              </h1>
+              <p class="info-text">
+                An AI based, foolproof attendance management system to monitor the
+                Student's attendance using Face Recognition
+              </p>
+  
+              <div class="btn_wrapper">
+                <button class="btn view_more_btn" style="background: #335eea;">
+                  Read More.. <i class="ri-arrow-right-line"></i>
+                </button>
+  
+                <button class="btn documentation_btn">Documentation</button>
+              </div>
+            </div>
+           
+          </div>
+        </div>
+      </section>
+    <footer></footer>
+
+    <!-- ==== ANIMATE ON SCROLL JS CDN -->
+    <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+    <!-- ==== GSAP CDN ==== -->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.8.0/gsap.min.js"></script>
+    <!-- ==== SCRIPT.JS ==== -->
+    <script src="{{ url_for('static', filename='script.js')}}" defer></script>
+  </body>
+</html>

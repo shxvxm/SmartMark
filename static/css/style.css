@@ -407,8 +407,9 @@ footer {
 
 .footer-left img {
   border-radius: 50%;
-  height: 160px;
-  width: 150px;
+  height: 120px;
+  width: 120px;
+  margin-bottom: 2rem;
 }
 
 .footer-right h2 {

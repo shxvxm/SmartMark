@@ -9,6 +9,10 @@ camera = cv2.VideoCapture(0)
 rajat_image = face_recognition.load_image_file("Rajat/rajat.jpg")
 rajat_face_encoding = face_recognition.face_encodings(rajat_image)[0]
 
+
+ishika_image = face_recognition.load_image_file("Ishika/ishika.jpeg")
+ishika_face_encoding = face_recognition.face_encodings(ishika_image)[0]
+
 aman_image = face_recognition.load_image_file("Aman/aman.jpeg")
 aman_face_encoding = face_recognition.face_encodings(aman_image)[0]
 
@@ -25,14 +29,16 @@ known_face_encodings = [
     bradley_face_encoding,
     rajat_face_encoding,
     aman_face_encoding,
-    shivam_face_encoding
+    shivam_face_encoding,
+    ishika_face_encoding
 
 ]
 known_face_names = [
     "Bradly",
     "Rajat R.",
     "Aman S.",
-    "Shivam M."
+    "Shivam M.",
+    "Ishika R."
 ]
 # Initialize some variables
 face_locations = []
